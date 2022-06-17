@@ -1,0 +1,2 @@
+js garante interatividade a um site
+js é interpretada, ou seja, não passa por um compilador.

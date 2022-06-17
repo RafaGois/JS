@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação</title>
+</head>
+<body>
+    <p>Informe a velocidade do carro:</p>
+    <input type="number" name="velo" id="velo">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="coloca">
+
+    </div>
+    <script>
+        const calcular = () => {
+            let velocidade = window.document.querySelector("input#velo")
+            let vel = Number(velocidade.value)
+            console.log(vel);
+
+            let tela = window.document.querySelector("div#coloca");
+            tela.innerHTML = `<p>Velociade do carro: <srong>${vel}</strong> km/h</p>`;
+
+            if( Number(vel) > 60) {
+                alert("Muito rápido, vá com calma!")
+            } else {
+                alert("Tudo certo!")
+            }
+        };
+    </script>
+</body>
+</html>

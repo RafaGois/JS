@@ -1,0 +1,30 @@
+h1{
+    font-size: 30px;
+    color: aliceblue;
+    letter-spacing: 3px;
+}
+
+body{
+    background-color: blue;
+    text-align: center;
+    margin: auto;
+}
+
+section{
+    background-color: white;
+   
+    width: 600px;
+
+    border-radius: 10px;
+    margin: auto;
+
+    flex-direction: column;
+
+    padding: 15px;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}

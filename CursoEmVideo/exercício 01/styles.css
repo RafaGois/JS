@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(255, 142, 4);
+    margin: auto;
+}
+
+section {
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+
+    margin: auto;
+    padding: 15px;
+
+    border-radius: 10px;
+
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.26);
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    border-radius: 300px;
+}
+
+header, footer {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}

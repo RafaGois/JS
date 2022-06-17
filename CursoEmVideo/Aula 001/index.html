@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(53, 187, 0);
+        };
+    </style>
+    <title>Primeira Página</title>
+</head>
+<body>
+    <h1>Esta é a minha primeira página em muito tempo!</h1>
+    <p>Nunca é tarde de mais para recomeçar!</p>
+    
+    <script>
+        
+        var gostando = window.confirm("Está gostando da aula??");
+        var nome = window.prompt("Qual seu nome?");
+        console.log(nome);
+
+        const dizerOla = (param) => {
+            var frase = (gostando) ? "Que bom que está gostando." : "Estamos tentando melhorar.";
+            return "Olá " + param + " , seja bem vindo! " + frase;
+        }
+
+        console.log(dizerOla(nome));
+        window.alert(`Cuidado!!! ${nome}`);//template String
+
+        document.write(dizerOla(nome));
+
+        var salario = 1230.00;
+
+        console.log(salario.toLocaleString('pt-BR',{style:'currency', currency: 'BRL'}));//convertendo número para formato de salário
+
+    </script>
+</body>
+</html>

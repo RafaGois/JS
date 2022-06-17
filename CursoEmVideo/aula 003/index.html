@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        h1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="top">TITULO DA PAGINA</h1>
+    <p>aprendendo DOM com <strong>Curso Em Vídeo</strong></p>
+    <p>DOM = Document, Object, Model</p>
+    <script>
+        //escrevendo na tela com js.
+        document.write("Texto em JavaScript :)");
+
+        var p1 = window.document.getElementsByTagName('p')[0];//primeiro tag <p>
+        p1.style.color = 'yellow';
+
+        var p2 = window.document.getElementById('top');
+        p2.style.color = 'blue';
+    </script>
+</body>
+</html>

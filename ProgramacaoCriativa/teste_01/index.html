@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Criativa</title>
+</head>
+<body>
+    <h1>Estudos com a Domestika</h1>
+    <canvas height="600" width="600"></canvas>
+    <script>
+
+        var canvas = document.querySelector('canvas');
+        var context = canvas.getContext('2d');
+
+        // context.fillStyle= 'yellow';
+        // context.fillRect(100,100,400,400);
+
+        // //cria um  alinha em forma de quadrado
+        // context.lineWidth = 4;
+        // context.beginPath();
+        // context.rect(100,100,400,400)
+        // context.stroke();
+
+        // //cria um  alinha em forma de circulo
+        // context.beginPath();
+        // context.lineWidth = 4;
+        // context.arc(300,300,200,0,Math.PI * 2);
+        // context.stroke();
+
+        // for(var i = 0; i < 6; i++) {
+        //     context.beginPath();
+        //     context.rect(100 + 55 * i,100 + 55 * i,50,50);
+        //     context.stroke();
+        // };
+
+        for(var i = 0; i < 5; i++) {
+            for(var j = 0; j < 5; j++) {
+                let width = 60;
+                let height = 60;
+                let gap = 20;
+                let x = 100 + (width + gap) * i; 
+                let y = 100 + (height + gap) * j;
+
+                context.beginPath();
+                context.rect(x,y,width,height);
+                context.stroke();
+
+                if(Math.random() > 0.5) {
+
+                    for(var k = 0; k < 5; k++) {
+                        context.beginPath();
+                        context.rect(x = x + 5,y = y + 5,width = width - 10,height = height - 10);
+                        context.stroke();
+                    }
+                }
+            }   
+        }
+    </script>
+</body>
+</html>
